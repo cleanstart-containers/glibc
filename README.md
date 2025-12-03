@@ -59,14 +59,14 @@ docker pull --platform linux/arm64 cleanstart/glibc:latest
 ```
 
 **
-### Resources & Documentation  
-Essential links and resources for further information:
+### 
+### Resources
 
-- CleanStart Website: https://www.cleanstart.com
+- Official Documentation: https://www.gnu.org/software/libc/manual/
 - View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/glibc
+- Docker Hub: https://hub.docker.com/r/cleanstart/glibc
 - CleanStart All Images: https://images.cleanstart.com
-- CleanStart Community Images: https://hub.docker.com/u/cleanstart
-- Other location for Community image: https://hub.docker.com/r/cleanstart/glibc
+- CleanStart All Community Images: https://hub.docker.com/u/cleanstart
 
 ---
 
