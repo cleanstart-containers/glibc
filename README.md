@@ -1,24 +1,24 @@
-**CleanStart Container for Glibc**
+- *CleanStart Container for Glibc**
 
 The GNU C Library (glibc) container provides essential standard C libraries and utilities required for Linux applications. This container includes the complete GNU C Library implementation, featuring POSIX threading support, locale data, and core system libraries. It serves as a fundamental runtime dependency for applications requiring glibc compatibility, offering standardized C library functions, system calls, and internationalization support. The container is security-hardened and optimized for enterprise deployments, featuring minimal attack surface and FIPS-compliant cryptographic functions.
 
 📌 **CleanStart Foundation**: Security-hardened, minimal base OS designed for enterprise containerized environments.
 
-**Key Features**
-* Complete GNU C Library implementation with POSIX support
-* Internationalization and locale data included
-* Thread-safe library functions and utilities
-* FIPS 140-2 compliant cryptographic functions
+- *Key Features**
+- Complete GNU C Library implementation with POSIX support
+- Internationalization and locale data included
+- Thread-safe library functions and utilities
+- FIPS 140-2 compliant cryptographic functions
 
-**Common Use Cases**
-* Base container for C/C++ applications requiring glibc
-* Runtime environment for compiled applications
-* Multi-language application support requiring standard C libraries
-* Enterprise applications requiring POSIX compliance
+- *Common Use Cases**
+- Base container for C/C++ applications requiring glibc
+- Runtime environment for compiled applications
+- Multi-language application support requiring standard C libraries
+- Enterprise applications requiring POSIX compliance
 
-**Quick Start**
+- *Quick Start**
 
-**Pull Latest Image**
+- *Pull Latest Image**
 Download the container image from the registry
 
 ```bash
@@ -28,14 +28,14 @@ docker pull cleanstart/glibc:latest
 docker pull cleanstart/glibc:latest-dev
 ```
 
-**Basic Run**
+- *Basic Run**
 Run the container with basic configuration
 
 ```bash
 docker run -it --name glibc-test cleanstart/glibc:latest-dev /bin/bash
 ```
 
-**Production Deployment**
+- *Production Deployment**
 Deploy with production security settings
 
 ```bash
@@ -47,9 +47,9 @@ Deploy with production security settings
   tail -f /dev/null
 ```
 
-**Architecture Support**
+- *Architecture Support**
 
-**Multi-Platform Images**
+- *Multi-Platform Images**
 
 ```bash
 docker pull --platform linux/amd64 cleanstart/glibc:latest
@@ -58,17 +58,17 @@ docker pull --platform linux/amd64 cleanstart/glibc:latest
 docker pull --platform linux/arm64 cleanstart/glibc:latest
 ```
 
-**
-### 
-### Resources
+- *
 
-- Official Documentation: https://www.gnu.org/software/libc/manual/
-- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/glibc
-- Docker Hub: https://hub.docker.com/r/cleanstart/glibc
-- CleanStart All Images: https://images.cleanstart.com
-- CleanStart All Community Images: https://hub.docker.com/u/cleanstart
+###
 
----
+## Resources
+
+- **Official Documentation:** https://www.gnu.org/software/libc/manual/
+- **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/glibc
+- **Docker Hub:** https://hub.docker.com/r/cleanstart/glibc
+- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ### Vulnerability Disclaimer
 
