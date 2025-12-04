@@ -37,17 +37,17 @@ Typical scenarios where this container excels:
 
 Download the container image from the registry:
 ```bash
-docker pull cleanstart/glibc:latest
+docker pull ghcr.io/cleanstart-containers/glibc:latest
 ```
 ```bash
-docker pull cleanstart/glibc:latest-dev
+docker pull ghcr.io/cleanstart-containers/glibc:latest-dev
 ```
 
 ### Basic Run
 
 Run the container with basic configuration:
 ```bash
-docker run -it --name glibc-test cleanstart/glibc:latest-dev /bin/bash
+docker run -it --name glibc-test ghcr.io/cleanstart-containers/glibc:latest-dev /bin/bash
 ```
 
 ### Production Deployment
@@ -58,7 +58,7 @@ docker run -d --name glibc-prod \
   --read-only \
   --security-opt=no-new-privileges \
   --user 1000:1000 \
-  cleanstart/glibc:latest \
+  ghcr.io/cleanstart-containers/glibc:latest \
   tail -f /dev/null
 ```
 
@@ -68,10 +68,10 @@ docker run -d --name glibc-prod \
 
 ### Multi-Platform Images
 ```bash
-docker pull --platform linux/amd64 cleanstart/glibc:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/glibc:latest
 ```
 ```bash
-docker pull --platform linux/arm64 cleanstart/glibc:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/glibc:latest
 ```
 
 ---
